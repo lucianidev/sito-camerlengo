@@ -1,0 +1,192 @@
+*{
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+:root{
+  --background-color : #F5DEB3;
+  --footer-background-color : #0000;
+  --green-background : #005A09;
+  --dark-text-color: #000;
+  --white-text-color : #FFF;
+  --footer-text-color : #484949;
+}
+
+.light--color {
+  color: var(--white-text-color);
+}
+
+.dark--color {
+  color: var(--dark-text-color);
+}
+
+.green--color {
+  color: var(--green-background);
+}
+
+.footer-link-color {
+  color: var(--footer-text-color);
+}
+
+.center-text {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+body {
+  background: var(--background-color);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.yeseva-one {
+  font-family: 'Yeseva One', cursive;
+}
+
+.josefin-sans {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.big-text {
+  font-size: 2.3rem;
+}
+
+.medium-text {
+  font-size: 1.2rem;
+}
+
+.small-text {
+  font-size: 1rem;
+}
+
+img {
+  max-width:100%;
+  -o-object-fit: scale-down;
+     object-fit: contain;
+  width: 100%;
+}
+
+video {
+  object-fit: cover;
+}
+
+.show-over {
+  z-index: 1;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-viewport {
+  height: 100vh;
+}
+
+.flex-start {
+  justify-content:flex-start;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.vertical-space {
+  margin: .75rem 0;
+}
+
+.lateral-space {
+  margin: 0 .75rem;
+}
+
+.space {
+  margin: .75rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.pad {
+  padding: 10px 30px;
+}
+
+button {
+  background: var(--green-background);
+  border: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+footer {
+  position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  background: var(--dark-text-color);
+  color: var(--footer-text-color);
+}
+
+footer a{
+  color: var(--footer-text-color);
+}
+
+.grid-center {
+  align-content: center;
+}
+
+.two-columns-disposed-layout {
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 997px) {
+  .two-columns-disposed-layout {
+      grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}

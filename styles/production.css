@@ -1,0 +1,36 @@
+.production {
+    grid-template-rows: 350px 350px;
+    word-wrap: break-word;
+    align-items: center;
+}
+
+.production--number {
+    background: var(--green-background);
+    border-radius: 360px;
+    padding: 30px;
+}
+
+.production--align-right {
+    position: relative;
+    left: 200px;
+}
+
+.production-step {
+    grid-template-columns: 10% 80%;
+}
+
+@media only screen and (max-width: 997px) {
+    .production--align-right {
+        left: 0;
+    }
+
+    .production-step {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .production--number {
+        display: none;
+    }
+
+}

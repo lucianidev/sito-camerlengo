@@ -1,0 +1,15 @@
+.home {
+    height: 100vh;
+    color: var(--text-color);
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    position:absolute;
+}
+
+.sitemap {
+    padding: 120px 50px;
+}
+
